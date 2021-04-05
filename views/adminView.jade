@@ -1,0 +1,23 @@
+extends layout
+
+link(rel="stylesheet", href="/stylesheets/style.css")
+
+block content
+        #mySidenav.sidenav
+        a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
+        a#test(href='test.html') Add Teacher
+        a(href='#') Remove Teacher
+        a(href='#') Add Student
+        a(href='#') Remove Student
+        // Use any element to open the sidenav
+    
+    
+    
+       span(onclick='openNav()') open
+    // Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+   #main
+      | ...Welcome #{title}
+
+script(src='/javascripts/test.js')
+      
+      
